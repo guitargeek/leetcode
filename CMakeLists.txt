@@ -10,6 +10,7 @@ include_directories(include)
 set(SOURCE_FILES
     src/twoSum.cpp
     src/reverseList.cpp
+    src/isBoomerang.cpp
 )
 
 add_library(leet SHARED ${SOURCE_FILES})
