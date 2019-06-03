@@ -21,8 +21,6 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 namespace leet {
 
-  using namespace std;
-
   ListNode* reverseList(ListNode* head) {
     ListNode* prev = NULL;
     while (head) {

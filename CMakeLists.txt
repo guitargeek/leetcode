@@ -9,8 +9,13 @@ include_directories(include)
 
 set(SOURCE_FILES
     src/twoSum.cpp
+    src/addTwoNumbers.cpp
     src/reverseList.cpp
+    src/hammingDistance.cpp
     src/isBoomerang.cpp
+    src/lastStoneWeight.cpp
+    src/numIslands.cpp
+    src/MinStack.cpp
 )
 
 add_library(leet SHARED ${SOURCE_FILES})
