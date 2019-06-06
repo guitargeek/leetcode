@@ -15,6 +15,13 @@ namespace leet {
     ListNode(int x) : val(x), next(NULL) {}
   };
 
+  struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+  };
+
   //
   // Functions which provide the actual problem solutions
   //
@@ -24,6 +31,9 @@ namespace leet {
 
   // 2. Add Two Numbers
   ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
+
+  // 15. 3Sum
+  std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
 
   // 155. Min Stack
   class MinStack;
@@ -37,11 +47,20 @@ namespace leet {
   // 461. Hamming Distance
   int hammingDistance(int x, int y);
 
+  // 938. Range Sum of BST
+  int rangeSumBST(TreeNode* root, int L, int R);
+
+  // 977. Squares of a Sorted Array
+  std::vector<int> sortedSquares(std::vector<int>& A);
+
   // 1037. Valid Boomerang
   bool isBoomerang(std::vector<std::vector<int>>& points);
 
   // 1046. Last Stone Weight
   int lastStoneWeight(std::vector<int>& stones);
+
+  // 1042. Flower Planting With No Adjacent
+  std::vector<int> gardenNoAdj(int N, std::vector<std::vector<int>>& paths);
 
 }  // namespace leet
 

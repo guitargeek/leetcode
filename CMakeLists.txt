@@ -10,11 +10,15 @@ include_directories(include)
 set(SOURCE_FILES
     src/twoSum.cpp
     src/addTwoNumbers.cpp
+    src/threeSum.cpp
     src/reverseList.cpp
     src/hammingDistance.cpp
     src/isBoomerang.cpp
     src/lastStoneWeight.cpp
+    src/rangeSumBST.cpp
+    src/sortedSquares.cpp
     src/numIslands.cpp
+    src/gardenNoAdj.cpp
     src/MinStack.cpp
 )
 
