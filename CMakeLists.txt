@@ -10,7 +10,11 @@ include_directories(include)
 set(SOURCE_FILES
     src/twoSum.cpp
     src/addTwoNumbers.cpp
+    src/lengthOfLongestSubstring.cpp
+    src/romanToInt.cpp
     src/threeSum.cpp
+    src/findPeakElement.cpp
+    src/climbStairs.cpp
     src/reverseList.cpp
     src/hammingDistance.cpp
     src/isBoomerang.cpp

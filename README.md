@@ -15,6 +15,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 15    | [3Sum](src/threeSum.cpp)                                |     Medium | 760 ms  | 17.7 MB | 5.43 %    | 30.19 %  | 28.05.2019  |
 | 70    | [Climbing Stairs](src/climbStairs.cpp)                  |       Easy | 0 ms    | 8.4 MB  | 100.00 %  | 48.46 %  | 31.05.2019  |
 | 155   | [Min Stack](src/MinStack.cpp)                           |       Easy | 32 ms   | 17.1 MB | 90.87 %   | 21.90 %  | 30.05.2019  |
+| 162   | [Find Peak Element](src/findPeakElement.cpp)            |     Medium |  8 ms   |    9 MB | 85.04 %   | 16.43 %  | 30.05.2019  |
 | 200   | [Number of Islands](src/numIslands.cpp)                 |     Medium | 24 ms   | 10.7 MB | 25.39 %   | 90.92 %  | 31.05.2019  |
 | 206   | [Reverse Linked List](src/reverseList.cpp)              |       Easy | 4 ms    | 9.2 MB  | 99.76 %   | 38.01 %  | 30.05.2019  |
 | 461   | [Hamming Distance](src/hammingDistance.cpp)             |       Easy | 0 ms    | 8.4 MB  | 100.00 %  | 52.26 %  | 30.05.2019  |
