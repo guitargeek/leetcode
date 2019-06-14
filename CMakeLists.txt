@@ -23,6 +23,7 @@ set(SOURCE_FILES
     src/sortedSquares.cpp
     src/numIslands.cpp
     src/gardenNoAdj.cpp
+    src/leastInterval.cpp
     src/MinStack.cpp
 )
 

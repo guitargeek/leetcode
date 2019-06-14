@@ -60,6 +60,9 @@ namespace leet {
   // 461. Hamming Distance
   int hammingDistance(int x, int y);
 
+  // 621. Task Scheduler
+  int leastInterval(std::vector<char>& tasks, int n);
+
   // 938. Range Sum of BST
   int rangeSumBST(TreeNode* root, int L, int R);
 
