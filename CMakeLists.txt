@@ -12,6 +12,7 @@ set(SOURCE_FILES
     src/addTwoNumbers.cpp
     src/lengthOfLongestSubstring.cpp
     src/romanToInt.cpp
+    src/longestConsecutive.cpp
     src/threeSum.cpp
     src/findPeakElement.cpp
     src/climbStairs.cpp
@@ -24,6 +25,7 @@ set(SOURCE_FILES
     src/numIslands.cpp
     src/gardenNoAdj.cpp
     src/leastInterval.cpp
+    src/diameterOfBinaryTree.cpp
     src/MinStack.cpp
 )
 

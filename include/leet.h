@@ -42,8 +42,11 @@ namespace leet {
   // 15. 3Sum
   std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
 
-  // 70 Climbing Stairs
+  // 70. Climbing Stairs
   int climbStairs(int n);
+
+  // 128. Longest Consecutive Sequence
+  int longestConsecutive(std::vector<int>& nums);
 
   // 155. Min Stack
   class MinStack;
@@ -59,6 +62,9 @@ namespace leet {
 
   // 461. Hamming Distance
   int hammingDistance(int x, int y);
+
+  // 543. Diameter of Binary Tree
+  int diameterOfBinaryTree(TreeNode* root);
 
   // 621. Task Scheduler
   int leastInterval(std::vector<char>& tasks, int n);
