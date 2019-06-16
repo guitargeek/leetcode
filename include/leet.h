@@ -36,6 +36,9 @@ namespace leet {
   // 3. Longest Substring Without Repeating Characters
   int lengthOfLongestSubstring(std::string s);
 
+  // 7. Reverse Integer
+  int reverse(int x);
+
   // 13. Roman to Integer
   int romanToInt(std::string s);
 
@@ -53,6 +56,9 @@ namespace leet {
 
   // 162. Find Peak Element
   int findPeakElement(std::vector<int>& v);
+
+  // 198. House Robber
+  int rob(std::vector<int>& nums);
 
   // 200. Number of Islands
   int numIslands(std::vector<std::vector<char>>& grid);
