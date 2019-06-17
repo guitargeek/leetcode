@@ -42,6 +42,9 @@ namespace leet {
   // 13. Roman to Integer
   int romanToInt(std::string s);
 
+  // 14. Longest Common Prefix
+  std::string longestCommonPrefix(std::vector<std::string>& strs);
+
   // 15. 3Sum
   std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
 
@@ -68,6 +71,9 @@ namespace leet {
 
   // 461. Hamming Distance
   int hammingDistance(int x, int y);
+
+  // 509. Fibonacci Number
+  int fib(int N);
 
   // 543. Diameter of Binary Tree
   int diameterOfBinaryTree(TreeNode* root);

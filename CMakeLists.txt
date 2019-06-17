@@ -12,10 +12,12 @@ set(SOURCE_FILES
     src/addTwoNumbers.cpp
     src/lengthOfLongestSubstring.cpp
     src/reverse.cpp
+    src/longestCommonPrefix.cpp
     src/romanToInt.cpp
     src/longestConsecutive.cpp
     src/threeSum.cpp
     src/rob.cpp
+    src/fib.cpp
     src/findPeakElement.cpp
     src/climbStairs.cpp
     src/reverseList.cpp
