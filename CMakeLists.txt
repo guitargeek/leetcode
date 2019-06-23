@@ -29,6 +29,7 @@ set(SOURCE_FILES
     src/numIslands.cpp
     src/gardenNoAdj.cpp
     src/leastInterval.cpp
+    src/numMovesStones.cpp
     src/diameterOfBinaryTree.cpp
     src/MinStack.cpp
 )

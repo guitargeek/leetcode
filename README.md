@@ -28,6 +28,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 621   | [Task Scheduler](src/leastInterval.cpp)                 |     Medium | 56 ms   | 9.8 MB  | 87.66 %   | 58.73 %  | 14.06.2019  |
 | 977   | [Squares of a Sorted Array](src/sortedSquares.cpp)      |       Easy | 116 ms  | 13.5 MB | 57.18 %   | 74.04 %  | 31.05.2019  |
 | 938   | [Range Sum of BST](src/rangeSumBST.cpp)                 |       Easy | 140 ms  | 41.3 MB | 94.86 %   | 55.54 %  | 31.05.2019  |
+| 1033  | [Moving Stones Until Consecutive](src/numMovesStones.cpp) |       Easy | 4 ms    | 8 MB  | 90.37 %   | 100.00 % | 20.06.2019  |
 | 1037  | [Valid Boomerang](src/isBoomerang.cpp)                  |       Easy | 4 ms    | 8.6 MB  | 88.12 %   | 100.00 % | 31.05.2019  |
 | 1042  | [Flower Planting With No Adjacent](src/gardenNoAdj.cpp) |       Easy | 156 ms  | 24.8 MB | 92.58 %   | 100.00 % | 05.06.2019  |
 | 1046  | [Last Stone Weight](src/lastStoneWeight.cpp)            |       Easy | 0 ms    | 8.4 MB  | 100.00 %  | 100.00 % | 31.05.2019  |

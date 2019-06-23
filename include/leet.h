@@ -93,6 +93,9 @@ namespace leet {
   // 1046. Last Stone Weight
   int lastStoneWeight(std::vector<int>& stones);
 
+  // 1033. Moving Stones Until Consecutive
+  std::vector<int> numMovesStones(int a, int b, int c);
+
   // 1042. Flower Planting With No Adjacent
   std::vector<int> gardenNoAdj(int N, std::vector<std::vector<int>>& paths);
 
