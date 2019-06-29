@@ -54,15 +54,20 @@ namespace leet {
 
   using namespace std;
 
-    vector<int> numMovesStones(int a, int b, int c) {
-        // bubble sort
-        if(a > b) swap(a, b);
-        if(b > c) swap(b, c);
-        if(a > b) swap(a, b);
-        vector<int> answer{2, c - a - 2};
-        if(c - b <= 2 || b - a <= 2) answer[0] = 1;
-        if(a + 2 == c) answer[0] = 0;
-        return answer;
-    }
+  vector<int> numMovesStones(int a, int b, int c) {
+    // bubble sort
+    if (a > b)
+      swap(a, b);
+    if (b > c)
+      swap(b, c);
+    if (a > b)
+      swap(a, b);
+    vector<int> answer{2, c - a - 2};
+    if (c - b <= 2 || b - a <= 2)
+      answer[0] = 1;
+    if (a + 2 == c)
+      answer[0] = 0;
+    return answer;
+  }
 
 }  // namespace leet

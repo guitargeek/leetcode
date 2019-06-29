@@ -25,6 +25,7 @@ set(SOURCE_FILES
     src/isBoomerang.cpp
     src/lastStoneWeight.cpp
     src/rangeSumBST.cpp
+    src/mergeTrees.cpp
     src/sortedSquares.cpp
     src/numIslands.cpp
     src/gardenNoAdj.cpp

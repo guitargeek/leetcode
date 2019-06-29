@@ -78,6 +78,9 @@ namespace leet {
   // 543. Diameter of Binary Tree
   int diameterOfBinaryTree(TreeNode* root);
 
+  // 617. Merge Two Binary Trees
+  TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2);
+
   // 621. Task Scheduler
   int leastInterval(std::vector<char>& tasks, int n);
 

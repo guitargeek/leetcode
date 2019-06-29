@@ -25,6 +25,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 461   | [Hamming Distance](src/hammingDistance.cpp)             |       Easy | 0 ms    | 8.4 MB  | 100.00 %  | 52.26 %  | 30.05.2019  |
 | 509   | [Fibonacci Number](src/fib.cpp)                         |       Easy | 0 ms    | 8.2 MB  | 100.00 %  | 58.86 %  | 16.06.2019  |
 | 543   | [Diameter of Binary Tree](src/diameterOfBinaryTree.cpp) |       Easy | 8 ms    | 20.1 MB | 97.07 %   | 45.20 %  | 14.06.2019  |
+| 617   | [Merge Two Binary Trees](src/mergeTrees.cpp)            |       Easy | 36 ms   | 13.5 MB | 92.45 %   | 85.42 %  | 25.06.2019  |
 | 621   | [Task Scheduler](src/leastInterval.cpp)                 |     Medium | 56 ms   | 9.8 MB  | 87.66 %   | 58.73 %  | 14.06.2019  |
 | 977   | [Squares of a Sorted Array](src/sortedSquares.cpp)      |       Easy | 116 ms  | 13.5 MB | 57.18 %   | 74.04 %  | 31.05.2019  |
 | 938   | [Range Sum of BST](src/rangeSumBST.cpp)                 |       Easy | 140 ms  | 41.3 MB | 94.86 %   | 55.54 %  | 31.05.2019  |

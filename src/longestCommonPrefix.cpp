@@ -35,24 +35,26 @@ namespace leet {
 
   using namespace std;
 
-    string longestCommonPrefix(vector<string>& strs) {
-        string prefix{};
-        int i = 0;
-        while(true) {
-            try {
-                auto c = strs.at(0).at(i);
-                for(auto const& str : strs) {
-                    auto d = str.at(i);
-                    if(c != d) return prefix;;
-                }
-                prefix += c;
-            } catch(const std::out_of_range&) {
-                    break;
-            }
-            ++i;
+  string longestCommonPrefix(vector<string>& strs) {
+    string prefix{};
+    int i = 0;
+    while (true) {
+      try {
+        auto c = strs.at(0).at(i);
+        for (auto const& str : strs) {
+          auto d = str.at(i);
+          if (c != d)
+            return prefix;
+          ;
         }
-        
-        return prefix;
+        prefix += c;
+      } catch (const std::out_of_range&) {
+        break;
+      }
+      ++i;
     }
+
+    return prefix;
+  }
 
 }  // namespace leet
