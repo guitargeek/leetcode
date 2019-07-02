@@ -33,3 +33,4 @@ The links in the table lead you to the C++ source code within this repository.
 | 1037  | [Valid Boomerang](src/isBoomerang.cpp)                  |       Easy | 4 ms    | 8.6 MB  | 88.12 %   | 100.00 % | 31.05.2019  |
 | 1042  | [Flower Planting With No Adjacent](src/gardenNoAdj.cpp) |       Easy | 156 ms  | 24.8 MB | 92.58 %   | 100.00 % | 05.06.2019  |
 | 1046  | [Last Stone Weight](src/lastStoneWeight.cpp)            |       Easy | 0 ms    | 8.4 MB  | 100.00 %  | 100.00 % | 31.05.2019  |
+| 1089  | [Duplicate Zeros](src/duplicateZeros.cpp)               |       Easy | 36 ms   | 9.2 MB  | 26.08 %   | 100.00 % | 26.06.2019  |

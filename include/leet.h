@@ -102,6 +102,9 @@ namespace leet {
   // 1042. Flower Planting With No Adjacent
   std::vector<int> gardenNoAdj(int N, std::vector<std::vector<int>>& paths);
 
+  // 1089. Duplicate Zeros
+  void duplicateZeros(std::vector<int>& arr);
+
 }  // namespace leet
 
 #endif

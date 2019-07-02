@@ -32,6 +32,7 @@ set(SOURCE_FILES
     src/leastInterval.cpp
     src/numMovesStones.cpp
     src/diameterOfBinaryTree.cpp
+    src/duplicateZeros.cpp
     src/MinStack.cpp
 )
 
