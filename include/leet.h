@@ -84,23 +84,32 @@ namespace leet {
   // 621. Task Scheduler
   int leastInterval(std::vector<char>& tasks, int n);
 
+  // 832. Flipping an Image
+  std::vector<std::vector<int>> flipAndInvertImage(std::vector<std::vector<int>>& A);
+
+  // 852. Peak Index in a Mountain Array
+  int peakIndexInMountainArray(std::vector<int>& A);
+
   // 938. Range Sum of BST
   int rangeSumBST(TreeNode* root, int L, int R);
 
   // 977. Squares of a Sorted Array
   std::vector<int> sortedSquares(std::vector<int>& A);
 
-  // 1037. Valid Boomerang
-  bool isBoomerang(std::vector<std::vector<int>>& points);
-
-  // 1046. Last Stone Weight
-  int lastStoneWeight(std::vector<int>& stones);
+  // 1021. Remove Outermost Parentheses
+  std::string removeOuterParentheses(std::string S);
 
   // 1033. Moving Stones Until Consecutive
   std::vector<int> numMovesStones(int a, int b, int c);
 
+  // 1037. Valid Boomerang
+  bool isBoomerang(std::vector<std::vector<int>>& points);
+
   // 1042. Flower Planting With No Adjacent
   std::vector<int> gardenNoAdj(int N, std::vector<std::vector<int>>& paths);
+
+  // 1046. Last Stone Weight
+  int lastStoneWeight(std::vector<int>& stones);
 
   // 1089. Duplicate Zeros
   void duplicateZeros(std::vector<int>& arr);

@@ -33,6 +33,9 @@ set(SOURCE_FILES
     src/numMovesStones.cpp
     src/diameterOfBinaryTree.cpp
     src/duplicateZeros.cpp
+    src/removeOuterParentheses.cpp
+    src/peakIndexInMountainArray.cpp
+    src/flipAndInvertImage.cpp
     src/MinStack.cpp
 )
 
