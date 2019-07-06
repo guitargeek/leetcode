@@ -99,6 +99,9 @@ namespace leet {
   // 1021. Remove Outermost Parentheses
   std::string removeOuterParentheses(std::string S);
 
+  // 1030. Matrix Cells in Distance Order
+  std::vector<std::vector<int>> allCellsDistOrder(int R, int C, int r0, int c0);
+
   // 1033. Moving Stones Until Consecutive
   std::vector<int> numMovesStones(int a, int b, int c);
 

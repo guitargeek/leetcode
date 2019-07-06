@@ -9,6 +9,7 @@ include_directories(include)
 
 set(SOURCE_FILES
     src/twoSum.cpp
+    src/allCellsDistOrder.cpp
     src/addTwoNumbers.cpp
     src/lengthOfLongestSubstring.cpp
     src/reverse.cpp
