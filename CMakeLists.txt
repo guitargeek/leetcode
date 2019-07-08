@@ -18,6 +18,8 @@ set(SOURCE_FILES
     src/longestConsecutive.cpp
     src/threeSum.cpp
     src/rob.cpp
+    src/isValid.cpp
+    src/mergeTwoLists.cpp
     src/fib.cpp
     src/findPeakElement.cpp
     src/climbStairs.cpp

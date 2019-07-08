@@ -48,6 +48,12 @@ namespace leet {
   // 15. 3Sum
   std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
 
+  // 20. Valid Parentheses
+  bool isValid(std::string const& s);
+
+  // 21. Merge Two Sorted Lists
+  ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
+
   // 70. Climbing Stairs
   int climbStairs(int n);
 

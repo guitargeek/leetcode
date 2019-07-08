@@ -15,6 +15,8 @@ The links in the table lead you to the C++ source code within this repository.
 | 13    | [Roman to Integer](src/romanToInt.cpp)                  |       Easy | 8 ms    | 8.6 MB  | 97.90 %   | 77.30 %  | 27.05.2019  |
 | 14    | [Longest Common Prefix](src/longestCommonPrefix.cpp)    |       Easy | 4 ms    | 9.0 MB  | 98.09 %   | 48.33 %  | 29.05.2019  |
 | 15    | [3Sum](src/threeSum.cpp)                                |     Medium | 760 ms  | 17.7 MB | 5.43 %    | 30.19 %  | 28.05.2019  |
+| 20    | [Valid Parantheses](src/isValid.cpp)                    |       Easy | 4 ms    | 8.5 MB  | 74.17 %   | 29.45 %  | 27.06.2019  |
+| 21    | [Merge Two Sorted Lists](src/mergeTwoLists.cpp)         |       Easy | 8 ms    |   9 MB  | 85.58 %   | 21.97 %  | 03.06.2019  |
 | 70    | [Climbing Stairs](src/climbStairs.cpp)                  |       Easy | 0 ms    | 8.4 MB  | 100.00 %  | 48.46 %  | 31.05.2019  |
 | 128   | [Longest Consecutive Sequence](src/longestConsecutive.cpp) |    Hard | 8 ms    |  9.3 MB | 97.96 %   | 93.86 %  | 14.06.2019  |
 | 155   | [Min Stack](src/MinStack.cpp)                           |       Easy | 32 ms   | 17.1 MB | 90.87 %   | 21.90 %  | 30.05.2019  |
