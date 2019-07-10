@@ -34,39 +34,39 @@ Output: 3
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  namespace {
+    namespace {
 
-    bool mark(int x, int y, vector<vector<char>>& grid) {
-      if (x >= grid.size() || x < 0)
-        return false;
-      if (y >= grid[0].size() || y < 0)
-        return false;
-      if (grid[x][y] != '1')
-        return false;
+        bool mark(int x, int y, vector<vector<char>>& grid) {
+            if (x >= grid.size() || x < 0)
+                return false;
+            if (y >= grid[0].size() || y < 0)
+                return false;
+            if (grid[x][y] != '1')
+                return false;
 
-      grid[x][y] = 'm';
+            grid[x][y] = 'm';
 
-      mark(x + 1, y, grid);
-      mark(x - 1, y, grid);
-      mark(x, y + 1, grid);
-      mark(x, y - 1, grid);
+            mark(x + 1, y, grid);
+            mark(x - 1, y, grid);
+            mark(x, y + 1, grid);
+            mark(x, y - 1, grid);
 
-      return true;
+            return true;
+        }
+
+    }  // namespace
+
+    int numIslands(vector<vector<char>>& grid) {
+        int islandCount = 0;
+        for (int i = 0; i < grid.size(); i++) {
+            for (int j = 0; j < grid[i].size(); j++) {
+                if (mark(i, j, grid))
+                    islandCount++;
+            }
+        }
+        return islandCount;
     }
-
-  }  // namespace
-
-  int numIslands(vector<vector<char>>& grid) {
-    int islandCount = 0;
-    for (int i = 0; i < grid.size(); i++) {
-      for (int j = 0; j < grid[i].size(); j++) {
-        if (mark(i, j, grid))
-          islandCount++;
-      }
-    }
-    return islandCount;
-  }
 
 }  // namespace leet

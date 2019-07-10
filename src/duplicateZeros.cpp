@@ -39,15 +39,15 @@ Note:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  void duplicateZeros(vector<int>& arr) {
-    for (int i = 0; i < arr.size(); ++i) {
-      if (arr[i] == 0) {
-        memmove(arr.data() + i + 1, arr.data() + i, sizeof(int) * (arr.size() - i - 1));
-        ++i;
-      }
+    void duplicateZeros(vector<int>& arr) {
+        for (int i = 0; i < arr.size(); ++i) {
+            if (arr[i] == 0) {
+                memmove(arr.data() + i + 1, arr.data() + i, sizeof(int) * (arr.size() - i - 1));
+                ++i;
+            }
+        }
     }
-  }
 
 }  // namespace leet

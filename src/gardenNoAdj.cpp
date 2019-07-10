@@ -46,35 +46,35 @@ Output: [1,2,3,4]
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  vector<int> gardenNoAdj(int N, vector<vector<int>>& paths) {
-    vector<int> flowers(N, 1);
+    vector<int> gardenNoAdj(int N, vector<vector<int>>& paths) {
+        vector<int> flowers(N, 1);
 
-    if (N <= 4) {
-      iota(flowers.begin(), flowers.end(), 1);
-      return flowers;
-    }
-
-    sort(paths.begin(), paths.end(), [](auto& p1, auto& p2) {
-      if (p1[0] == p2[0])
-        return p1[1] < p2[1];
-      return p1[0] < p2[0];
-    });
-
-    bool run = true;
-    while (run) {
-      run = false;
-
-      for (auto const& path : paths) {
-        if (flowers[path[0] - 1] == flowers[path[1] - 1]) {
-          flowers[path[1] - 1] = (flowers[path[1] - 1] % 4) + 1;
-          run = true;
+        if (N <= 4) {
+            iota(flowers.begin(), flowers.end(), 1);
+            return flowers;
         }
-      }
-    }
 
-    return flowers;
-  }
+        sort(paths.begin(), paths.end(), [](auto& p1, auto& p2) {
+            if (p1[0] == p2[0])
+                return p1[1] < p2[1];
+            return p1[0] < p2[0];
+        });
+
+        bool run = true;
+        while (run) {
+            run = false;
+
+            for (auto const& path : paths) {
+                if (flowers[path[0] - 1] == flowers[path[1] - 1]) {
+                    flowers[path[1] - 1] = (flowers[path[1] - 1] % 4) + 1;
+                    run = true;
+                }
+            }
+        }
+
+        return flowers;
+    }
 
 }  // namespace leet

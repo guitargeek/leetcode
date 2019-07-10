@@ -21,18 +21,18 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 namespace leet {
 
-  ListNode* reverseList(ListNode* head) {
-    ListNode* prev = NULL;
-    while (head) {
-      auto next = head->next;
-      head->next = prev;
-      prev = head;
-      head = next;
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = NULL;
+        while (head) {
+            auto next = head->next;
+            head->next = prev;
+            prev = head;
+            head = next;
+        }
+        return prev;
     }
-    return prev;
-  }
 
-  /*
+    /*
      * This is the recursive solution, which is slower however so we don't use it.
      *
      *ListNode* reverseList(ListNode* head, ListNode* tail=NULL) {

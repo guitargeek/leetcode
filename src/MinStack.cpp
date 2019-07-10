@@ -30,37 +30,37 @@ minStack.getMin();   --> Returns -2.
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  class MinStack {
-  public:
-    /** initialize your data structure here. */
-    MinStack() {}
+    class MinStack {
+      public:
+        /** initialize your data structure here. */
+        MinStack() {}
 
-    void push(int x) {
-      if (stack_.empty()) {
-        minst_.push(x);
-      } else {
-        minst_.push(min(minst_.top(), x));
-      }
-      stack_.push(x);
-    }
+        void push(int x) {
+            if (stack_.empty()) {
+                minst_.push(x);
+            } else {
+                minst_.push(min(minst_.top(), x));
+            }
+            stack_.push(x);
+        }
 
-    void pop() {
-      stack_.pop();
-      minst_.pop();
-    }
+        void pop() {
+            stack_.pop();
+            minst_.pop();
+        }
 
-    int top() { return stack_.top(); }
+        int top() { return stack_.top(); }
 
-    int getMin() { return minst_.top(); }
+        int getMin() { return minst_.top(); }
 
-  private:
-    stack<int> stack_;
-    stack<int> minst_;
-  };
+      private:
+        stack<int> stack_;
+        stack<int> minst_;
+    };
 
-  /**
+    /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack* obj = new MinStack();
  * obj->push(x);

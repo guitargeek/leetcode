@@ -53,100 +53,100 @@ Note:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  namespace {
+    namespace {
 
-    template <class I1, class I2>
-    void sort_by_key(I1 keys_begin, I1 keys_end, I2 data_begin, I2 data_end) {
-      size_t size = keys_end - keys_begin;
-      std::vector<size_t> p(size, 0);
-      std::vector<size_t> rp(size);
-      std::vector<bool> sorted(size, false);
-      size_t i = 0;
+        template <class I1, class I2>
+        void sort_by_key(I1 keys_begin, I1 keys_end, I2 data_begin, I2 data_end) {
+            size_t size = keys_end - keys_begin;
+            std::vector<size_t> p(size, 0);
+            std::vector<size_t> rp(size);
+            std::vector<bool> sorted(size, false);
+            size_t i = 0;
 
-      // Sort
-      std::iota(p.begin(), p.end(), 0);
-      std::sort(p.begin(), p.end(), [&](size_t i, size_t j) { return *(keys_begin + i) < *(keys_begin + j); });
+            // Sort
+            std::iota(p.begin(), p.end(), 0);
+            std::sort(p.begin(), p.end(), [&](size_t i, size_t j) { return *(keys_begin + i) < *(keys_begin + j); });
 
-      // ----------- Apply permutation in-place ---------- //
+            // ----------- Apply permutation in-place ---------- //
 
-      // Get reverse permutation item>position
-      for (i = 0; i < size; ++i) {
-        rp[p[i]] = i;
-      }
+            // Get reverse permutation item>position
+            for (i = 0; i < size; ++i) {
+                rp[p[i]] = i;
+            }
 
-      i = 0;
-      typename I1::value_type savedKey;
-      typename I2::value_type savedData;
-      while (i < size) {
-        size_t pos = i;
-        // Save This element;
-        if (!sorted[pos]) {
-          savedKey = *(keys_begin + p[pos]);
-          savedData = *(data_begin + p[pos]);
+            i = 0;
+            typename I1::value_type savedKey;
+            typename I2::value_type savedData;
+            while (i < size) {
+                size_t pos = i;
+                // Save This element;
+                if (!sorted[pos]) {
+                    savedKey = *(keys_begin + p[pos]);
+                    savedData = *(data_begin + p[pos]);
+                }
+                while (!sorted[pos]) {
+                    // Hold item to be replaced
+                    typename I1::value_type heldKey = *(keys_begin + pos);
+                    typename I2::value_type heldData = *(data_begin + pos);
+                    // Save where it should go
+                    size_t heldPos = rp[pos];
+
+                    // Replace
+                    *(keys_begin + pos) = savedKey;
+                    *(data_begin + pos) = savedData;
+
+                    // Get last item to be the pivot
+                    savedKey = heldKey;
+                    savedData = heldData;
+
+                    // Mark this item as sorted
+                    sorted[pos] = true;
+
+                    // Go to the held item proper location
+                    pos = heldPos;
+                }
+                ++i;
+            }
         }
-        while (!sorted[pos]) {
-          // Hold item to be replaced
-          typename I1::value_type heldKey = *(keys_begin + pos);
-          typename I2::value_type heldData = *(data_begin + pos);
-          // Save where it should go
-          size_t heldPos = rp[pos];
 
-          // Replace
-          *(keys_begin + pos) = savedKey;
-          *(data_begin + pos) = savedData;
+        template <class RandomAccessIterator, class Extractor, class Compare>
+        void precomputed_value_sort(RandomAccessIterator begin,
+                                    RandomAccessIterator end,
+                                    const Extractor& extr,
+                                    const Compare& comp) {
+            using Value = typename std::iterator_traits<RandomAccessIterator>::value_type;
+            using Scalar = decltype(extr(*begin));
 
-          // Get last item to be the pivot
-          savedKey = heldKey;
-          savedData = heldData;
-
-          // Mark this item as sorted
-          sorted[pos] = true;
-
-          // Go to the held item proper location
-          pos = heldPos;
+            std::vector<Scalar> keys;
+            keys.reserve(end - begin);
+            for (auto i = begin; i != end; i++)
+                keys.emplace_back(extr(*i));
+            sort_by_key(keys.begin(), keys.end(), begin, end);
         }
-        ++i;
-      }
+
+        template <class RandomAccessIterator, class Extractor>
+        void precomputed_value_sort(RandomAccessIterator begin, RandomAccessIterator end, const Extractor& extr) {
+            using Scalar = decltype(extr(*begin));
+            precomputed_value_sort(begin, end, extr, std::less<Scalar>());
+        }
+
+    }  // namespace
+
+    vector<vector<int>> allCellsDistOrder(int R, int C, int r0, int c0) {
+        vector<vector<int>> p;
+        for (int r = 0; r < R; ++r) {
+            for (int c = 0; c < C; ++c) {
+                p.push_back({r, c});
+            }
+        }
+        precomputed_value_sort(
+            p.begin(),
+            p.end(),
+            [&](auto const& p1) { return abs(p1[0] - r0) + abs(p1[1] - c0); },
+            [](auto const& d1, auto const& d2) { return d1 < d2; });
+        return p;
     }
-
-    template <class RandomAccessIterator, class Extractor, class Compare>
-    void precomputed_value_sort(RandomAccessIterator begin,
-                                RandomAccessIterator end,
-                                const Extractor& extr,
-                                const Compare& comp) {
-      using Value = typename std::iterator_traits<RandomAccessIterator>::value_type;
-      using Scalar = decltype(extr(*begin));
-
-      std::vector<Scalar> keys;
-      keys.reserve(end - begin);
-      for (auto i = begin; i != end; i++)
-        keys.emplace_back(extr(*i));
-      sort_by_key(keys.begin(), keys.end(), begin, end);
-    }
-
-    template <class RandomAccessIterator, class Extractor>
-    void precomputed_value_sort(RandomAccessIterator begin, RandomAccessIterator end, const Extractor& extr) {
-      using Scalar = decltype(extr(*begin));
-      precomputed_value_sort(begin, end, extr, std::less<Scalar>());
-    }
-
-  }  // namespace
-
-  vector<vector<int>> allCellsDistOrder(int R, int C, int r0, int c0) {
-    vector<vector<int>> p;
-    for (int r = 0; r < R; ++r) {
-      for (int c = 0; c < C; ++c) {
-        p.push_back({r, c});
-      }
-    }
-    precomputed_value_sort(
-        p.begin(),
-        p.end(),
-        [&](auto const& p1) { return abs(p1[0] - r0) + abs(p1[1] - c0); },
-        [](auto const& d1, auto const& d2) { return d1 < d2; });
-    return p;
-  }
 
 }  // namespace leet

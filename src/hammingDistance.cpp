@@ -30,13 +30,13 @@ The above arrows point to positions where the corresponding bits are different.
 
 namespace leet {
 
-  int hammingDistance(int x, int y) {
-    x = x ^ y;
-    int c = 0;
-    for (int i = 0; i < 32; ++i) {
-      c += x >> i & 1;
+    int hammingDistance(int x, int y) {
+        x = x ^ y;
+        int c = 0;
+        for (int i = 0; i < 32; ++i) {
+            c += x >> i & 1;
+        }
+        return c;
     }
-    return c;
-  }
 
 }  // namespace leet

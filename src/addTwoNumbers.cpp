@@ -21,46 +21,46 @@ Explanation: 342 + 465 = 807.
 
 namespace leet {
 
-  ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-    ListNode* l1begin = l1;
-    ListNode* l2begin = l2;
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode* l1begin = l1;
+        ListNode* l2begin = l2;
 
-    ListNode* l;
+        ListNode* l;
 
-    while (true) {
-      int x = 0;
-      if (l1 == NULL) {
-        l = l2begin;
-        break;
-      } else
-        x += l1->val;
-      if (l2 == NULL) {
-        l = l1begin;
-        break;
-      } else
-        x += l2->val;
-      if (l1 != NULL)
-        l1->val = x;
-      if (l2 != NULL)
-        l2->val = x;
-      l1 = l1->next;
-      l2 = l2->next;
-    }
-
-    ListNode* out = l;
-
-    while (l) {
-      if (l->val > 9) {
-        l->val = l->val % 10;
-        if (l->next) {
-          l->next->val += 1;
-        } else {
-          l->next = new ListNode(1);
+        while (true) {
+            int x = 0;
+            if (l1 == NULL) {
+                l = l2begin;
+                break;
+            } else
+                x += l1->val;
+            if (l2 == NULL) {
+                l = l1begin;
+                break;
+            } else
+                x += l2->val;
+            if (l1 != NULL)
+                l1->val = x;
+            if (l2 != NULL)
+                l2->val = x;
+            l1 = l1->next;
+            l2 = l2->next;
         }
-      }
-      l = l->next;
+
+        ListNode* out = l;
+
+        while (l) {
+            if (l->val > 9) {
+                l->val = l->val % 10;
+                if (l->next) {
+                    l->next->val += 1;
+                } else {
+                    l->next = new ListNode(1);
+                }
+            }
+            l = l->next;
+        }
+        return out;
     }
-    return out;
-  }
 
 }  // namespace leet

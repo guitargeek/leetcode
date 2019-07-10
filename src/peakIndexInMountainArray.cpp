@@ -36,14 +36,14 @@ Note:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  int peakIndexInMountainArray(vector<int>& A) {
-    for (int i = 1; i < A.size(); ++i) {
-      if (A[i] - A[i - 1] < 0)
-        return i - 1;
+    int peakIndexInMountainArray(vector<int>& A) {
+        for (int i = 1; i < A.size(); ++i) {
+            if (A[i] - A[i - 1] < 0)
+                return i - 1;
+        }
+        return -1;
     }
-    return -1;
-  }
 
 }  // namespace leet

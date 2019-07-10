@@ -5,7 +5,7 @@ ColumnLimit:     120
 #didn't we want to change this?
 NamespaceIndentation: All
 SortIncludes:    false
-IndentWidth:     2
+IndentWidth:     4
 AccessModifierOffset: -2
 PenaltyBreakComment: 30
 PenaltyExcessCharacter: 100

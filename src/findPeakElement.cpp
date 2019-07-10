@@ -39,36 +39,36 @@ Your solution should be in logarithmic complexity.
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  namespace {
-    int findPeakIndex(vector<int>::iterator a, vector<int>::iterator b) {
-      int n = distance(a, b);
-      if (n < 3)
-        return -1;
+    namespace {
+        int findPeakIndex(vector<int>::iterator a, vector<int>::iterator b) {
+            int n = distance(a, b);
+            if (n < 3)
+                return -1;
 
-      auto m = a + n / 2;
-      if (*m > *(m - 1) && *m > *(m + 1)) {
-        return distance(a, m);
-      }
+            auto m = a + n / 2;
+            if (*m > *(m - 1) && *m > *(m + 1)) {
+                return distance(a, m);
+            }
 
-      if (n == 3)
-        return -1;
+            if (n == 3)
+                return -1;
 
-      int i = findPeakIndex(a, m + 1);
-      if (i < 0) {
-        i = findPeakIndex(m, b);
-        if (i >= 0)
-          return distance(a, m) + i;
-      }
-      return i;
+            int i = findPeakIndex(a, m + 1);
+            if (i < 0) {
+                i = findPeakIndex(m, b);
+                if (i >= 0)
+                    return distance(a, m) + i;
+            }
+            return i;
+        }
+    }  // namespace
+
+    int findPeakElement(vector<int>& v) {
+        if (v.size() < 20)
+            return max_element(v.begin(), v.end()) - v.begin();
+        return findPeakIndex(v.begin(), v.end());
     }
-  }  // namespace
-
-  int findPeakElement(vector<int>& v) {
-    if (v.size() < 20)
-      return max_element(v.begin(), v.end()) - v.begin();
-    return findPeakIndex(v.begin(), v.end());
-  }
 
 }  // namespace leet

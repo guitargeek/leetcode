@@ -57,24 +57,24 @@ Note:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  string removeOuterParentheses(string S) {
-    int n = 0;
-    string out;
-    bool add = true;
+    string removeOuterParentheses(string S) {
+        int n = 0;
+        string out;
+        bool add = true;
 
-    for (auto const& c : S) {
-      add = true;
-      if (n == 0)
-        add = false;
-      n += (c == '(') - (c == ')');
-      if (n == 0)
-        add = false;
-      if (add)
-        out += c;
+        for (auto const& c : S) {
+            add = true;
+            if (n == 0)
+                add = false;
+            n += (c == '(') - (c == ')');
+            if (n == 0)
+                add = false;
+            if (add)
+                out += c;
+        }
+        return out;
     }
-    return out;
-  }
 
 }  // namespace leet

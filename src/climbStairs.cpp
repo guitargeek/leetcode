@@ -35,18 +35,18 @@ Explanation: There are three ways to climb to the top.
 
 namespace leet {
 
-  int climbStairs(int n) {
-    int a = 1;
-    int b = 1;
-    int c;
+    int climbStairs(int n) {
+        int a = 1;
+        int b = 1;
+        int c;
 
-    for (int i = 0; i < n - 1; ++i) {
-      c = a;
-      a = a + b;
-      b = c;
+        for (int i = 0; i < n - 1; ++i) {
+            c = a;
+            a = a + b;
+            b = c;
+        }
+
+        return a;
     }
-
-    return a;
-  }
 
 }  // namespace leet

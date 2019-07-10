@@ -27,13 +27,13 @@ Output: false
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  bool isBoomerang(vector<vector<int>>& p) {
-    if ((p[0][0] == p[1][0] && p[0][1] == p[1][1]) || (p[0][0] == p[2][0] && p[0][1] == p[2][1]) ||
-        (p[1][0] == p[2][0] && p[1][1] == p[2][1]))
-      return false;
-    return (p[1][1] - p[0][1]) * (p[2][0] - p[1][0]) != (p[1][0] - p[0][0]) * (p[2][1] - p[1][1]);
-  }
+    bool isBoomerang(vector<vector<int>>& p) {
+        if ((p[0][0] == p[1][0] && p[0][1] == p[1][1]) || (p[0][0] == p[2][0] && p[0][1] == p[2][1]) ||
+            (p[1][0] == p[2][0] && p[1][1] == p[2][1]))
+            return false;
+        return (p[1][1] - p[0][1]) * (p[2][0] - p[1][0]) != (p[1][0] - p[0][0]) * (p[2][1] - p[1][1]);
+    }
 
 }  // namespace leet

@@ -22,25 +22,25 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  int longestConsecutive(vector<int>& nums) {
-    if (nums.size() < 2)
-      return nums.size();
-    sort(nums.begin(), nums.end());
-    int longest = 1;
-    int len = 1;
-    for (auto it = nums.begin() + 1; it != nums.end(); ++it) {
-      if (*it - 1 == *(it - 1)) {
-        ++len;
-      } else if (*it == *(it - 1)) {
-        continue;
-      } else {
-        longest = max(longest, len);
-        len = 1;
-      }
+    int longestConsecutive(vector<int>& nums) {
+        if (nums.size() < 2)
+            return nums.size();
+        sort(nums.begin(), nums.end());
+        int longest = 1;
+        int len = 1;
+        for (auto it = nums.begin() + 1; it != nums.end(); ++it) {
+            if (*it - 1 == *(it - 1)) {
+                ++len;
+            } else if (*it == *(it - 1)) {
+                continue;
+            } else {
+                longest = max(longest, len);
+                len = 1;
+            }
+        }
+        return max(longest, len);
     }
-    return max(longest, len);
-  }
 
 }  // namespace leet

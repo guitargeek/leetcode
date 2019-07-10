@@ -32,54 +32,54 @@ Given a roman numeral, convert it to an integer. Input is guaranteed to be withi
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  int romanToInt(string s) {
-    int n = 0;
-    char p = '0';
-    for (auto c : s) {
-      if (c == 'I') {
-        n += 1;
-      } else if (c == 'V') {
-        if (p == 'I') {
-          n += 3;
-        } else {
-          n += 5;
+    int romanToInt(string s) {
+        int n = 0;
+        char p = '0';
+        for (auto c : s) {
+            if (c == 'I') {
+                n += 1;
+            } else if (c == 'V') {
+                if (p == 'I') {
+                    n += 3;
+                } else {
+                    n += 5;
+                }
+            } else if (c == 'X') {
+                if (p == 'I') {
+                    n += 8;
+                } else {
+                    n += 10;
+                }
+            } else if (c == 'L') {
+                if (p == 'X') {
+                    n += 30;
+                } else {
+                    n += 50;
+                }
+            } else if (c == 'C') {
+                if (p == 'X') {
+                    n += 80;
+                } else {
+                    n += 100;
+                }
+            } else if (c == 'D') {
+                if (p == 'C') {
+                    n += 300;
+                } else {
+                    n += 500;
+                }
+            } else if (c == 'M') {
+                if (p == 'C') {
+                    n += 800;
+                } else {
+                    n += 1000;
+                }
+            }
+            p = c;
         }
-      } else if (c == 'X') {
-        if (p == 'I') {
-          n += 8;
-        } else {
-          n += 10;
-        }
-      } else if (c == 'L') {
-        if (p == 'X') {
-          n += 30;
-        } else {
-          n += 50;
-        }
-      } else if (c == 'C') {
-        if (p == 'X') {
-          n += 80;
-        } else {
-          n += 100;
-        }
-      } else if (c == 'D') {
-        if (p == 'C') {
-          n += 300;
-        } else {
-          n += 500;
-        }
-      } else if (c == 'M') {
-        if (p == 'C') {
-          n += 800;
-        } else {
-          n += 1000;
-        }
-      }
-      p = c;
+        return n;
     }
-    return n;
-  }
 
 }  // namespace leet

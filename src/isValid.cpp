@@ -54,29 +54,29 @@ Output: true
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
     namespace {
-        constexpr pair<char,char> b1{'(', ')'};
-constexpr pair<char,char> b2{'{', '}'};
-constexpr pair<char,char> b3{'[', ']'};
+        constexpr pair<char, char> b1{'(', ')'};
+        constexpr pair<char, char> b2{'{', '}'};
+        constexpr pair<char, char> b3{'[', ']'};
 
-constexpr pair<char,char> pairs [3] = {b1, b2, b3};
-    }
+        constexpr pair<char, char> pairs[3] = {b1, b2, b3};
+    }  // namespace
 
     bool isValid(string const& s) {
-        
-        if(s.size() % 2 == 1) return false;
+        if (s.size() % 2 == 1)
+            return false;
 
         stack<char> brackets;
         brackets.push('s');
-        
-        for(auto const& c : s) {
-            for(auto const& p : pairs) {
-                if(c == p.first) {
+
+        for (auto const& c : s) {
+            for (auto const& p : pairs) {
+                if (c == p.first) {
                     brackets.push(c);
-                } else if(c == p.second) {
-                    if(brackets.top() == p.first) {
+                } else if (c == p.second) {
+                    if (brackets.top() == p.first) {
                         brackets.pop();
                     } else {
                         return false;

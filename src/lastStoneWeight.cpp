@@ -39,31 +39,31 @@ Note:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  int lastStoneWeight(vector<int>& stones) {
-    // sort stones by decreasing weight
-    sort(stones.begin(), stones.end(), greater<int>());
+    int lastStoneWeight(vector<int>& stones) {
+        // sort stones by decreasing weight
+        sort(stones.begin(), stones.end(), greater<int>());
 
-    while (stones.size() > 1) {
-      // compute weight of resulting stone and put it as the second element
-      stones[1] = stones[0] - stones[1];
-      stones[0] = 0;
-      if (stones[1] > 0) {
-        // move all the remaining stones one index to the front and remove the tail to get rid of the zero weight entry
-        stones.erase(remove(stones.begin(), stones.end(), 0), stones.end());
-        // insert the resulting stone at the right place to the stones remain sorted, no memory allocation required as
-        // stones.capacity() >= stones.size() + 1 as we erased the last element before
-        stones.insert(upper_bound(stones.begin() + 1, stones.end(), stones[0], greater<int>()), stones[0]);
-        // now we can erase the first element which we have inserted somewhere else
-        stones.erase(stones.begin(), stones.begin() + 1);
-      } else {
-        // if the resulting stone has also weight zeros, we can just red rid of the two elements
-        stones.erase(stones.begin(), stones.begin() + 2);
-      }
+        while (stones.size() > 1) {
+            // compute weight of resulting stone and put it as the second element
+            stones[1] = stones[0] - stones[1];
+            stones[0] = 0;
+            if (stones[1] > 0) {
+                // move all the remaining stones one index to the front and remove the tail to get rid of the zero weight entry
+                stones.erase(remove(stones.begin(), stones.end(), 0), stones.end());
+                // insert the resulting stone at the right place to the stones remain sorted, no memory allocation required as
+                // stones.capacity() >= stones.size() + 1 as we erased the last element before
+                stones.insert(upper_bound(stones.begin() + 1, stones.end(), stones[0], greater<int>()), stones[0]);
+                // now we can erase the first element which we have inserted somewhere else
+                stones.erase(stones.begin(), stones.begin() + 1);
+            } else {
+                // if the resulting stone has also weight zeros, we can just red rid of the two elements
+                stones.erase(stones.begin(), stones.begin() + 2);
+            }
+        }
+
+        return stones[0];
     }
-
-    return stones[0];
-  }
 
 }  // namespace leet

@@ -33,19 +33,19 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  int rob(vector<int>& v) {
-    if (v.size() == 0)
-      return 0;
-    if (v.size() == 1)
-      return v[0];
+    int rob(vector<int>& v) {
+        if (v.size() == 0)
+            return 0;
+        if (v.size() == 1)
+            return v[0];
 
-    v[1] = max(v[0], v[1]);
-    for (int i = 2; i < v.size(); ++i) {
-      v[i] = max(v[i - 1], v[i] + v[i - 2]);
+        v[1] = max(v[0], v[1]);
+        for (int i = 2; i < v.size(); ++i) {
+            v[i] = max(v[i - 1], v[i] + v[i - 2]);
+        }
+        return v.back();
     }
-    return v.back();
-  }
 
 }  // namespace leet

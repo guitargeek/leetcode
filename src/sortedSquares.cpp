@@ -33,17 +33,17 @@ Note:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  vector<int> sortedSquares(vector<int>& A) {
-    vector<int> B(A.size());
-    int i = 0;
-    for (auto const& x : A) {
-      B[i] = x * x;
-      ++i;
+    vector<int> sortedSquares(vector<int>& A) {
+        vector<int> B(A.size());
+        int i = 0;
+        for (auto const& x : A) {
+            B[i] = x * x;
+            ++i;
+        }
+        sort(B.begin(), B.end());
+        return B;
     }
-    sort(B.begin(), B.end());
-    return B;
-  }
 
 }  // namespace leet

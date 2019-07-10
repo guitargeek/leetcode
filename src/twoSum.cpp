@@ -24,23 +24,23 @@ return [0, 1].
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  vector<int> twoSum(vector<int>& nums, int target) {
-    unordered_map<int, int> indexMap;
-    vector<int> indices{-1, -1};
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> indexMap;
+        vector<int> indices{-1, -1};
 
-    for (int i = 0; i < nums.size(); ++i) {
-      auto got = indexMap.find(target - nums[i]);
-      if (got != indexMap.end()) {
-        indices[1] = i;
-        indices[0] = got->second;
-        break;
-      }
-      indexMap[nums[i]] = i;
+        for (int i = 0; i < nums.size(); ++i) {
+            auto got = indexMap.find(target - nums[i]);
+            if (got != indexMap.end()) {
+                indices[1] = i;
+                indices[0] = got->second;
+                break;
+            }
+            indexMap[nums[i]] = i;
+        }
+
+        return indices;
     }
-
-    return indices;
-  }
 
 }  // namespace leet

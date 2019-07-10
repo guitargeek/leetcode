@@ -39,38 +39,38 @@ Explanation: The answer is "wke", with the length of 3.
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  int lengthOfLongestSubstring(string s) {
-    auto n = s.size();
-    if (n == 0)
-      return 0;
-    if (n == 1)
-      return 1;
+    int lengthOfLongestSubstring(string s) {
+        auto n = s.size();
+        if (n == 0)
+            return 0;
+        if (n == 1)
+            return 1;
 
-    int l = 1;
-    int lmax = 1;
+        int l = 1;
+        int lmax = 1;
 
-    int i = 0;
-    int j = 1;
+        int i = 0;
+        int j = 1;
 
-    unordered_set<char> us{s[i]};
+        unordered_set<char> us{s[i]};
 
-    while (j < n && n - i > lmax) {
-      if (us.insert(s[j]).second) {
-        lmax = max(lmax, ++l);
-        ++j;
-      } else {
-        us.erase(s[i++]);
-        us.insert(s[i]);
-        if (i == j)
-          ++j;
-        else
-          --l;
-      }
+        while (j < n && n - i > lmax) {
+            if (us.insert(s[j]).second) {
+                lmax = max(lmax, ++l);
+                ++j;
+            } else {
+                us.erase(s[i++]);
+                us.insert(s[i]);
+                if (i == j)
+                    ++j;
+                else
+                    --l;
+            }
+        }
+
+        return lmax;
     }
-
-    return lmax;
-  }
 
 }  // namespace leet

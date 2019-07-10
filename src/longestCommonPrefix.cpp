@@ -33,28 +33,28 @@ All given inputs are in lowercase letters a-z.
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  string longestCommonPrefix(vector<string>& strs) {
-    string prefix{};
-    int i = 0;
-    while (true) {
-      try {
-        auto c = strs.at(0).at(i);
-        for (auto const& str : strs) {
-          auto d = str.at(i);
-          if (c != d)
-            return prefix;
-          ;
+    string longestCommonPrefix(vector<string>& strs) {
+        string prefix{};
+        int i = 0;
+        while (true) {
+            try {
+                auto c = strs.at(0).at(i);
+                for (auto const& str : strs) {
+                    auto d = str.at(i);
+                    if (c != d)
+                        return prefix;
+                    ;
+                }
+                prefix += c;
+            } catch (const std::out_of_range&) {
+                break;
+            }
+            ++i;
         }
-        prefix += c;
-      } catch (const std::out_of_range&) {
-        break;
-      }
-      ++i;
-    }
 
-    return prefix;
-  }
+        return prefix;
+    }
 
 }  // namespace leet

@@ -32,25 +32,25 @@ Note:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  int leastInterval(vector<char>& tasks, int n) {
-    vector<int> counts(26, 0);
-    for (char task : tasks) {
-      ++counts[task - 'A'];
+    int leastInterval(vector<char>& tasks, int n) {
+        vector<int> counts(26, 0);
+        for (char task : tasks) {
+            ++counts[task - 'A'];
+        }
+        sort(counts.begin(), counts.end());
+        int i = 0;
+        // How many times does the maximum occur?
+        while (i <= 25 && counts[25 - i] == counts[25])
+            ++i;
+        // How  many steps you need to execute only the tasks which occured the most?
+        // if there are other tasks which have to be executed just as often,
+        // increase sequence length by one.
+        // The remaining tasks get used up to fill the idle cycles,
+        // and if there are too many we more cycles have to be added in which case
+        // the answer will just be tasts.size()
+        return max(int(tasks.size()), (counts[25] - 1) * n + counts[25] + i - 1);
     }
-    sort(counts.begin(), counts.end());
-    int i = 0;
-    // How many times does the maximum occur?
-    while (i <= 25 && counts[25 - i] == counts[25])
-      ++i;
-    // How  many steps you need to execute only the tasks which occured the most?
-    // if there are other tasks which have to be executed just as often,
-    // increase sequence length by one.
-    // The remaining tasks get used up to fill the idle cycles,
-    // and if there are too many we more cycles have to be added in which case
-    // the answer will just be tasts.size()
-    return max(int(tasks.size()), (counts[25] - 1) * n + counts[25] + i - 1);
-  }
 
 }  // namespace leet

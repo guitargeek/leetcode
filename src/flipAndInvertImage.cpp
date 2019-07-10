@@ -39,17 +39,17 @@ Notes:
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  vector<vector<int>> flipAndInvertImage(vector<vector<int>>& A) {
-    vector<vector<int>> out;
-    for (auto const& a : A) {
-      out.emplace_back(a.size());
-      for (int i = 0; i < a.size(); ++i) {
-        out.back()[i] = 1 - a[a.size() - i - 1];
-      }
+    vector<vector<int>> flipAndInvertImage(vector<vector<int>>& A) {
+        vector<vector<int>> out;
+        for (auto const& a : A) {
+            out.emplace_back(a.size());
+            for (int i = 0; i < a.size(); ++i) {
+                out.back()[i] = 1 - a[a.size() - i - 1];
+            }
+        }
+        return out;
     }
-    return out;
-  }
 
 }  // namespace leet

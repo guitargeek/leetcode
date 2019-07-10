@@ -24,28 +24,28 @@ Note: The length of path between two nodes is represented by the number of edges
 
 namespace leet {
 
-  using namespace std;
+    using namespace std;
 
-  namespace {
-    int recurse(TreeNode* root, int& maximum) {
-      if (root == NULL)
-        return 0;
-      int left = 0;
-      int right = 0;
-      if (root->left)
-        left = recurse(root->left, maximum) + 1;
-      if (root->right)
-        right = recurse(root->right, maximum) + 1;
+    namespace {
+        int recurse(TreeNode* root, int& maximum) {
+            if (root == NULL)
+                return 0;
+            int left = 0;
+            int right = 0;
+            if (root->left)
+                left = recurse(root->left, maximum) + 1;
+            if (root->right)
+                right = recurse(root->right, maximum) + 1;
 
-      maximum = max(maximum, left + right);
-      return max(left, right);
+            maximum = max(maximum, left + right);
+            return max(left, right);
+        }
+    }  // namespace
+
+    int diameterOfBinaryTree(TreeNode* root) {
+        int maximum = 0;
+        recurse(root, maximum);
+        return maximum;
     }
-  }  // namespace
-
-  int diameterOfBinaryTree(TreeNode* root) {
-    int maximum = 0;
-    recurse(root, maximum);
-    return maximum;
-  }
 
 }  // namespace leet
