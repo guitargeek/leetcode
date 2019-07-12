@@ -7,39 +7,6 @@ project(leet)
 
 include_directories(include)
 
-set(SOURCE_FILES
-    src/twoSum.cpp
-    src/allCellsDistOrder.cpp
-    src/addTwoNumbers.cpp
-    src/lengthOfLongestSubstring.cpp
-    src/reverse.cpp
-    src/longestCommonPrefix.cpp
-    src/romanToInt.cpp
-    src/longestConsecutive.cpp
-    src/threeSum.cpp
-    src/rob.cpp
-    src/isValid.cpp
-    src/mergeTwoLists.cpp
-    src/fib.cpp
-    src/findPeakElement.cpp
-    src/climbStairs.cpp
-    src/reverseList.cpp
-    src/hammingDistance.cpp
-    src/isBoomerang.cpp
-    src/lastStoneWeight.cpp
-    src/rangeSumBST.cpp
-    src/mergeTrees.cpp
-    src/sortedSquares.cpp
-    src/numIslands.cpp
-    src/gardenNoAdj.cpp
-    src/leastInterval.cpp
-    src/numMovesStones.cpp
-    src/diameterOfBinaryTree.cpp
-    src/duplicateZeros.cpp
-    src/removeOuterParentheses.cpp
-    src/peakIndexInMountainArray.cpp
-    src/flipAndInvertImage.cpp
-    src/MinStack.cpp
-)
+file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 
 add_library(leet SHARED ${SOURCE_FILES})

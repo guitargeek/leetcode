@@ -54,6 +54,9 @@ namespace leet {
     // 21. Merge Two Sorted Lists
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 
+    // 53. Maximum Subarray
+    int maxSubArray(std::vector<int>& nums);
+
     // 70. Climbing Stairs
     int climbStairs(int n);
 
@@ -74,6 +77,9 @@ namespace leet {
 
     // 206. Reverse Linked List
     ListNode* reverseList(ListNode* head);
+
+    // 226. Invert Binary Tree
+    TreeNode* invertTree(TreeNode* root);
 
     // 461. Hamming Distance
     int hammingDistance(int x, int y);
