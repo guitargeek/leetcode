@@ -90,6 +90,9 @@ namespace leet {
     // 543. Diameter of Binary Tree
     int diameterOfBinaryTree(TreeNode* root);
 
+    // 581. Shortest Unsorted Continuous Subarray
+    int findUnsortedSubarray(std::vector<int> const& nums);
+
     // 617. Merge Two Binary Trees
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2);
 
