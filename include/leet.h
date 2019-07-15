@@ -87,6 +87,9 @@ namespace leet {
     // 509. Fibonacci Number
     int fib(int N);
 
+    // 538. Convert BST to Greater Tree
+    TreeNode* convertBST(TreeNode* root);
+
     // 543. Diameter of Binary Tree
     int diameterOfBinaryTree(TreeNode* root);
 
@@ -98,6 +101,12 @@ namespace leet {
 
     // 621. Task Scheduler
     int leastInterval(std::vector<char>& tasks, int n);
+
+    // 709. To Lower Case
+    std::string toLowerCase(std::string str);
+
+    // 771.  Jewels and Stones
+    int numJewelsInStones(std::string const& J, std::string const& S);
 
     // 832. Flipping an Image
     std::vector<std::vector<int>> flipAndInvertImage(std::vector<std::vector<int>>& A);
@@ -128,6 +137,14 @@ namespace leet {
 
     // 1046. Last Stone Weight
     int lastStoneWeight(std::vector<int>& stones);
+
+    // 1047. Remove All Adjacent Duplicates In String
+    std::string removeDuplicates(std::string const& str);
+
+    // 1078. Occurrences After Bigram
+    std::vector<std::string> findOcurrences(std::string const& text,
+                                            std::string const& first,
+                                            std::string const& second);
 
     // 1089. Duplicate Zeros
     void duplicateZeros(std::vector<int>& arr);
