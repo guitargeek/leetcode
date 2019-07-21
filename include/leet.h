@@ -63,6 +63,9 @@ namespace leet {
     // 128. Longest Consecutive Sequence
     int longestConsecutive(std::vector<int>& nums);
 
+    // 136. Single Number
+    int singleNumber(std::vector<int> const& nums);
+
     // 155. Min Stack
     class MinStack;
 
@@ -80,6 +83,12 @@ namespace leet {
 
     // 226. Invert Binary Tree
     TreeNode* invertTree(TreeNode* root);
+
+    // 234. Palindrome Linked List
+    bool isPalindrome(ListNode* head);
+
+    // 448. Find All Numbers Disappeared in an Array
+    std::vector<int> findDisappearedNumbers(std::vector<int>& nums);
 
     // 461. Hamming Distance
     int hammingDistance(int x, int y);
@@ -148,6 +157,9 @@ namespace leet {
 
     // 1089. Duplicate Zeros
     void duplicateZeros(std::vector<int>& arr);
+
+    // 1122. Relative Sort Array
+    std::vector<int> relativeSortArray(std::vector<int>& arr1, std::vector<int>& arr2);
 
 }  // namespace leet
 
