@@ -51,4 +51,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 1047  | [Remove All Adjacent Duplicates In String](src/removeDuplicates.cpp) | Easy | 68 ms | 33 MB | 27.45 % | 100.00 % | 08.06.2019  |
 | 1078  | [Occurences After Bigram](src/findOcurrences.cpp)       |       Easy | 0 ms    | 8.6 MB  | 100.00 %  | 100.00 % | 27.06.2019  |
 | 1089  | [Duplicate Zeros](src/duplicateZeros.cpp)               |       Easy | 36 ms   | 9.2 MB  | 26.08 %   | 100.00 % | 26.06.2019  |
+| 1108  | [Defanging an IP Address](src/defangIPaddr.cpp)         |       Easy |  48 ms   | 8.1 MB  | 54.94 %   | 100.00 % | 30.07.2019  |
+| 1114  | [Print In Order](src/Foo.cpp)                           |       Easy | 192 ms  | 9.2 MB  | 21.69 %   | 100.00 % | 30.07.2019  |
 | 1122  | [Relative Sort Array](src/relativeSortArray.cpp)        |       Easy |  4 ms   | 9.1 MB  | 90.89 %   | 100.00 % | 19.07.2019  |
+| 1128  | [Number of Equivalent Domino Pairs](src/numEquivDominoPairs.cpp) | Easy | 48 ms | 21.2 MB  | 57.72 %   | 100.00 % | 30.07.2019  |

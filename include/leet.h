@@ -158,8 +158,17 @@ namespace leet {
     // 1089. Duplicate Zeros
     void duplicateZeros(std::vector<int>& arr);
 
+    // 1108. Defanging an IP Address
+    std::string defangIPaddr(std::string address);
+
+    // 1114. Print in Order
+    class Foo;
+
     // 1122. Relative Sort Array
     std::vector<int> relativeSortArray(std::vector<int>& arr1, std::vector<int>& arr2);
+
+    // 1128. Number of Equivalent Domino Pairs
+    int numEquivDominoPairs(std::vector<std::vector<int>>& dominoes);
 
 }  // namespace leet
 
