@@ -72,6 +72,9 @@ namespace leet {
     // 162. Find Peak Element
     int findPeakElement(std::vector<int>& v);
 
+    // 191. Number of 1 Bits
+    int hammingWeight(uint32_t n);
+
     // 198. House Robber
     int rob(std::vector<int>& nums);
 
@@ -86,6 +89,12 @@ namespace leet {
 
     // 234. Palindrome Linked List
     bool isPalindrome(ListNode* head);
+
+    // 338. Counting Bits
+    std::vector<int> countBits(int num);
+
+    // 397. Integer Replacement
+    int integerReplacement(int n);
 
     // 448. Find All Numbers Disappeared in an Array
     std::vector<int> findDisappearedNumbers(std::vector<int>& nums);
@@ -111,11 +120,23 @@ namespace leet {
     // 621. Task Scheduler
     int leastInterval(std::vector<char>& tasks, int n);
 
+    // 693. Binary Number with Alternating Bits
+    bool hasAlternatingBits(int n);
+
     // 709. To Lower Case
     std::string toLowerCase(std::string str);
 
+    // 705. Design HashSet
+    class MyHashSet;
+
+    // 706. Design HashMap
+    class MyHashMap;
+
     // 771.  Jewels and Stones
     int numJewelsInStones(std::string const& J, std::string const& S);
+
+    // 824. Goat Latin
+    std::string toGoatLatin(std::string const& s);
 
     // 832. Flipping an Image
     std::vector<std::vector<int>> flipAndInvertImage(std::vector<std::vector<int>>& A);
@@ -128,6 +149,9 @@ namespace leet {
 
     // 977. Squares of a Sorted Array
     std::vector<int> sortedSquares(std::vector<int>& A);
+
+    // 1009. Complement of Base 10 Integer
+    int bitwiseComplement(int n);
 
     // 1021. Remove Outermost Parentheses
     std::string removeOuterParentheses(std::string S);
