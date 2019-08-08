@@ -144,6 +144,9 @@ namespace leet {
     // 852. Peak Index in a Mountain Array
     int peakIndexInMountainArray(std::vector<int>& A);
 
+    // 937. Reorder Log Files
+    std::vector<std::string> reorderLogFiles(std::vector<std::string>& logs);
+
     // 938. Range Sum of BST
     int rangeSumBST(TreeNode* root, int L, int R);
 
@@ -155,6 +158,9 @@ namespace leet {
 
     // 1021. Remove Outermost Parentheses
     std::string removeOuterParentheses(std::string S);
+
+    // 1022. Sum of Root To Leaf Binary Numbers
+    int sumRootToLeaf(TreeNode* root);
 
     // 1030. Matrix Cells in Distance Order
     std::vector<std::vector<int>> allCellsDistOrder(int R, int C, int r0, int c0);
