@@ -135,6 +135,9 @@ namespace leet {
     // 771.  Jewels and Stones
     int numJewelsInStones(std::string const& J, std::string const& S);
 
+    // 784. Letter Case Permutation
+    std::vector<std::string> letterCasePermutation(std::string const& s);
+
     // 824. Goat Latin
     std::string toGoatLatin(std::string const& s);
 
@@ -143,6 +146,9 @@ namespace leet {
 
     // 852. Peak Index in a Mountain Array
     int peakIndexInMountainArray(std::vector<int>& A);
+
+    // 896. Monotonic Array
+    bool isMonotonic(std::vector<int> const& a);
 
     // 937. Reorder Log Files
     std::vector<std::string> reorderLogFiles(std::vector<std::string>& logs);
