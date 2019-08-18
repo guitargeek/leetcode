@@ -29,6 +29,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 206   | [Reverse Linked List](src/reverseList.cpp)                                         | Easy       | 4 ms    | 9.2 MB   | 99.76 %   | 38.01 %  | 30.05.2019  |
 | 226   | [Invert Binary Tree](src/invertTree.cpp)                                           | Easy       | 4 ms    | 9.3 MB   | 100.00 %  | 63.17 %  | 20.06.2019  |
 | 234   | [Palindrome Linked List](src/isPalindrome.cpp)                                     | Easy       | 24 ms   | 13.4 MB  | 74.03 %   | 27.91 %  | 22.06.2019  |
+| 292   | [Nim Game](src/canWinNim.cpp)                                                      | Easy       | 4 ms    | 8.1 MB   | 48.79 %   | 83.33 %  | 22.08.2019  |
 | 338   | [Counting Bits](src/countingBits.cpp)                                              | Medium     | 56 ms   | 9.4 MB   | 49.07 %   | 100.00 % | 07.08.2019  |
 | 397   | [Integer Replacement](src/integerReplacement.cpp)                                  | Medium     | 12 ms   | 8.1 MB   | 8.94 %    | 100.00 % | 07.08.2019  |
 | 448   | [Find All Numbers Disappeared in an Array](src/findDisappearedNumbers.cpp)         | Easy       | 112 ms  | 14.8 MB  | 89.31 %   | 82.58 %  | 20.06.2019  |
@@ -36,6 +37,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 509   | [Fibonacci Number](src/fib.cpp)                                                    | Easy       | 0 ms    | 8.2 MB   | 100.00 %  | 58.86 %  | 16.06.2019  |
 | 538   | [Convert BST to Greater Tree](src/convertBST.cpp)                                  | Easy       | 32 ms   | 23.2 MB  | 91.11 %   | 99.60 %  | 28.06.2019  |
 | 543   | [Diameter of Binary Tree](src/diameterOfBinaryTree.cpp)                            | Easy       | 8 ms    | 20.1 MB  | 97.07 %   | 45.20 %  | 14.06.2019  |
+| 566   | [Reshape the Matrix](src/matrixReshape.cpp)                                        | Easy       | 32 ms   | 11.7 MB  | 92.94 %   | 68.00 %  | 22.08.2019  |
 | 581   | [Shortest Unsorted Continuous Subarray](src/findUnsortedSubarray.cpp)              | Easy       | 32 ms   | 10.5 MB  | 93.57 %   | 63.43 %  | 15.07.2019  |
 | 617   | [Merge Two Binary Trees](src/mergeTrees.cpp)                                       | Easy       | 36 ms   | 13.5 MB  | 92.45 %   | 85.42 %  | 25.06.2019  |
 | 621   | [Task Scheduler](src/leastInterval.cpp)                                            | Medium     | 56 ms   | 9.8 MB   | 87.66 %   | 58.73 %  | 14.06.2019  |
@@ -50,6 +52,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 832   | [Flipping an Image](src/flipAndInvertImage.cpp)                                    | Easy       | 12 ms   | 9.4 MB   | 82.43 %   | 28.42 %  | 06.06.2019  |
 | 852   | [Peak Index in a Mountain Array](src/peakIndexInMountainArray.cpp)                 | Easy       | 16 ms   | 9.6 MB   | 78.92 %   | 8.53 %   | 04.06.2019  |
 | 896   | [Monotinic Array](src/isMonotonic.cpp)                                             | Easy       | 84 ms   | 14.1 MB  | 51.14 %   | 78.95 %  | 12.08.2019  |
+| 917   | [Reverse Only Letters](src/reverseOnlyLetters.cpp)                                 | Easy       | 4 ms    | 8.1 MB   | 56.79 %   | 100.00 % | 20.08.2019  |
 | 937   | [Reorder Log Files](src/reorderLogFiles.cpp)                                       | Easy       | 12 ms   | 11.8 MB  | 90.51 %   | 100.00 % | 08.08.2019  |
 | 938   | [Range Sum of BST](src/rangeSumBST.cpp)                                            | Easy       | 140 ms  | 41.3 MB  | 94.86 %   | 55.54 %  | 31.05.2019  |
 | 976   | [Largest Perimeter Triangle](src/largestPerimeter.cpp)                             | Easy       | 52 ms   | 10.5 MB  | 82.11 %   | 62.50 %  | 19.08.2019  |

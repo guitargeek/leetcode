@@ -90,6 +90,9 @@ namespace leet {
     // 234. Palindrome Linked List
     bool isPalindrome(ListNode* head);
 
+    // 292. Nim Game
+    bool canWinNim(int n);
+
     // 338. Counting Bits
     std::vector<int> countBits(int num);
 
@@ -110,6 +113,9 @@ namespace leet {
 
     // 543. Diameter of Binary Tree
     int diameterOfBinaryTree(TreeNode* root);
+
+    // 566. Reshape the Matrix
+    std::vector<std::vector<int>> matrixReshape(std::vector<std::vector<int>>& nums, int r, int c);
 
     // 581. Shortest Unsorted Continuous Subarray
     int findUnsortedSubarray(std::vector<int> const& nums);
@@ -155,6 +161,9 @@ namespace leet {
 
     // 937. Reorder Log Files
     std::vector<std::string> reorderLogFiles(std::vector<std::string>& logs);
+
+    // 917. Reverse Only Letters
+    std::string reverseOnlyLetters(std::string s);
 
     // 938. Range Sum of BST
     int rangeSumBST(TreeNode* root, int L, int R);
