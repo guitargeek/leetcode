@@ -45,12 +45,14 @@ The links in the table lead you to the C++ source code within this repository.
 | 709   | [To Lower Case](src/toLowerCase.cpp)                                               | Easy       | 0 ms    | 8.4 MB   | 100.00 %  | 39.12 %  | 08.06.2019  |
 | 771   | [Jewels and Stones](src/numJewelsInStones.cpp)                                     | Easy       | 4 ms    | 8.8 MB   | 100.00 %  | 22.78 %  | 08.06.2019  |
 | 784   | [Letter Case Permutation](src/letterCasePermutation.cpp)                           | Easy       | 12 ms   | 12.1 MB  | 55.07 %   | 97.06 %  | 12.08.2019  |
+| 812   | [Largest Triangle Area](src/largestTriangleArea.cpp)                               | Easy       | 4 ms    | 8.9 MB   | 97.83 %   | 100.00 % | 19.08.2019  |
 | 824   | [Goat Latin](src/toGoatLatin.cpp)                                                  | Easy       | 0 ms    | 8.8 MB   | 100.00 %  | 100.00 % | 07.08.2019  |
 | 832   | [Flipping an Image](src/flipAndInvertImage.cpp)                                    | Easy       | 12 ms   | 9.4 MB   | 82.43 %   | 28.42 %  | 06.06.2019  |
 | 852   | [Peak Index in a Mountain Array](src/peakIndexInMountainArray.cpp)                 | Easy       | 16 ms   | 9.6 MB   | 78.92 %   | 8.53 %   | 04.06.2019  |
 | 896   | [Monotinic Array](src/isMonotonic.cpp)                                             | Easy       | 84 ms   | 14.1 MB  | 51.14 %   | 78.95 %  | 12.08.2019  |
 | 937   | [Reorder Log Files](src/reorderLogFiles.cpp)                                       | Easy       | 12 ms   | 11.8 MB  | 90.51 %   | 100.00 % | 08.08.2019  |
 | 938   | [Range Sum of BST](src/rangeSumBST.cpp)                                            | Easy       | 140 ms  | 41.3 MB  | 94.86 %   | 55.54 %  | 31.05.2019  |
+| 976   | [Largest Perimeter Triangle](src/largestPerimeter.cpp)                             | Easy       | 52 ms   | 10.5 MB  | 82.11 %   | 62.50 %  | 19.08.2019  |
 | 977   | [Squares of a Sorted Array](src/sortedSquares.cpp)                                 | Easy       | 116 ms  | 13.5 MB  | 57.18 %   | 74.04 %  | 31.05.2019  |
 | 1009  | [Complement of Base 10 Integer](src/bitwiseComplement.cpp)                         | Easy       | 4 ms    | 8.3 MB   | 52.92 %   | 84.62 %  | 07.08.2019  |
 | 1021  | [Remove Outermost Parentheses](src/removeOuterParentheses.cpp)                     | Easy       | 0 ms    | 9 MB     | 100.00 %  | 42.95 %  | 27.06.2019  |

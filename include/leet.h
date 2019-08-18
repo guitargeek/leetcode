@@ -138,6 +138,9 @@ namespace leet {
     // 784. Letter Case Permutation
     std::vector<std::string> letterCasePermutation(std::string const& s);
 
+    // 812. Largest Triangle Area
+    double largestTriangleArea(std::vector<std::vector<int>>& p);
+
     // 824. Goat Latin
     std::string toGoatLatin(std::string const& s);
 
@@ -155,6 +158,9 @@ namespace leet {
 
     // 938. Range Sum of BST
     int rangeSumBST(TreeNode* root, int L, int R);
+
+    // 976. Largest Perimeter Triangle
+    int largestPerimeter(std::vector<int>& a);
 
     // 977. Squares of a Sorted Array
     std::vector<int> sortedSquares(std::vector<int>& A);
