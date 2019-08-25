@@ -90,6 +90,9 @@ namespace leet {
     // 234. Palindrome Linked List
     bool isPalindrome(ListNode* head);
 
+    // 258. Add Digits
+    int addDigits(int num);
+
     // 292. Nim Game
     bool canWinNim(int n);
 
@@ -177,11 +180,17 @@ namespace leet {
     // 1009. Complement of Base 10 Integer
     int bitwiseComplement(int n);
 
+    // 1013. Partition Array Into Three Parts With Equal Sum
+    bool canThreePartsEqualSum(std::vector<int>& a);
+
     // 1021. Remove Outermost Parentheses
     std::string removeOuterParentheses(std::string S);
 
     // 1022. Sum of Root To Leaf Binary Numbers
     int sumRootToLeaf(TreeNode* root);
+
+    // 1029. Two City Scheduling
+    int twoCitySchedCost(std::vector<std::vector<int>>& costs);
 
     // 1030. Matrix Cells in Distance Order
     std::vector<std::vector<int>> allCellsDistOrder(int R, int C, int r0, int c0);
