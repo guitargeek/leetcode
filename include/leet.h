@@ -93,6 +93,9 @@ namespace leet {
     // 258. Add Digits
     int addDigits(int num);
 
+    // 287. Find the Duplicate Number
+    int findDuplicate(std::vector<int>& nums);
+
     // 292. Nim Game
     bool canWinNim(int n);
 
@@ -176,6 +179,9 @@ namespace leet {
 
     // 977. Squares of a Sorted Array
     std::vector<int> sortedSquares(std::vector<int>& A);
+
+    // 984. String Without AAA or BBB
+    std::string strWithout3a3b(int A, int B);
 
     // 1009. Complement of Base 10 Integer
     int bitwiseComplement(int n);

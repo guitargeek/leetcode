@@ -30,6 +30,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 226   | [Invert Binary Tree](src/invertTree.cpp)                                           | Easy       | 4 ms    | 9.3 MB   | 100.00 %  | 63.17 %  | 20.06.2019  |
 | 234   | [Palindrome Linked List](src/isPalindrome.cpp)                                     | Easy       | 24 ms   | 13.4 MB  | 74.03 %   | 27.91 %  | 22.06.2019  |
 | 258   | [Add Digits](src/addDigits.cpp)                                                    | Easy       | 4 ms    | 8.3 MB   | 67.49 %   | 73.91 %  | 22.08.2019  |
+| 287   | [Find the Duplicate Number](src/findDuplicate.cpp)                                 | Medium     | 12 ms   | 7.6 MB   | 54.37 %   | 100.00 % | 08.03.2020  |
 | 292   | [Nim Game](src/canWinNim.cpp)                                                      | Easy       | 4 ms    | 8.1 MB   | 48.79 %   | 83.33 %  | 22.08.2019  |
 | 338   | [Counting Bits](src/countingBits.cpp)                                              | Medium     | 56 ms   | 9.4 MB   | 49.07 %   | 100.00 % | 07.08.2019  |
 | 397   | [Integer Replacement](src/integerReplacement.cpp)                                  | Medium     | 12 ms   | 8.1 MB   | 8.94 %    | 100.00 % | 07.08.2019  |
@@ -58,6 +59,7 @@ The links in the table lead you to the C++ source code within this repository.
 | 938   | [Range Sum of BST](src/rangeSumBST.cpp)                                            | Easy       | 140 ms  | 41.3 MB  | 94.86 %   | 55.54 %  | 31.05.2019  |
 | 976   | [Largest Perimeter Triangle](src/largestPerimeter.cpp)                             | Easy       | 52 ms   | 10.5 MB  | 82.11 %   | 62.50 %  | 19.08.2019  |
 | 977   | [Squares of a Sorted Array](src/sortedSquares.cpp)                                 | Easy       | 116 ms  | 13.5 MB  | 57.18 %   | 74.04 %  | 31.05.2019  |
+| 984   | [String Without AAA or BBB](src/strWithout3a3b.cpp)                                | Medium     | 0 ms    | 6.6 MB   | 100.00 %  | 100.00 % | 26.04.2020  |
 | 1009  | [Complement of Base 10 Integer](src/bitwiseComplement.cpp)                         | Easy       | 4 ms    | 8.3 MB   | 52.92 %   | 84.62 %  | 07.08.2019  |
 | 1013  | [Partition Array Into Three Parts With Equal Sum](src/canThreePartsEqualSum.cpp)   | Easy       | 68 ms   | 12.7 MB  | 56.08 %   | 81.82 %  | 23.08.2019  |
 | 1021  | [Remove Outermost Parentheses](src/removeOuterParentheses.cpp)                     | Easy       | 0 ms    | 9 MB     | 100.00 %  | 42.95 %  | 27.06.2019  |
