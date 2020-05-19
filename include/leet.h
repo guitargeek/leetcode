@@ -36,6 +36,9 @@ namespace leet {
     // 3. Longest Substring Without Repeating Characters
     int lengthOfLongestSubstring(std::string s);
 
+    // 4. Median of Two Sorted Arrays
+    double findMedianSortedArrays(std::vector<int> const& nums1, std::vector<int> const& nums2);
+
     // 7. Reverse Integer
     int reverse(int x);
 
