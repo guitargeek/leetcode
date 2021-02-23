@@ -242,6 +242,9 @@ namespace leet {
     // 1128. Number of Equivalent Domino Pairs
     int numEquivDominoPairs(std::vector<std::vector<int>>& dominoes);
 
+    // 1752. Check if Array Is Sorted and Rotated
+    bool check(std::vector<int>& nums);
+
 }  // namespace leet
 
 #endif
