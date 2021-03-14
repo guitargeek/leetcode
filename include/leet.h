@@ -245,6 +245,9 @@ namespace leet {
     // 1752. Check if Array Is Sorted and Rotated
     bool check(std::vector<int>& nums);
 
+    // 1790. Check if One String Swap Can Make Strings Equal
+    bool areAlmostEqual(std::string const& s1, std::string const& s2);
+
 }  // namespace leet
 
 #endif
