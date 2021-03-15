@@ -83,5 +83,6 @@ The links in the table lead you to the C++ source code within this repository.
 | 1117  | [Building H2O](src/H2O.cpp)                                                        | Hard       | 436 ms  | 12.8 MB  | 43.93 %   | 100.00 % | 30.07.2019  |
 | 1122  | [Relative Sort Array](src/relativeSortArray.cpp)                                   | Easy       | 4 ms    | 9.1 MB   | 90.89 %   | 100.00 % | 19.07.2019  |
 | 1128  | [Number of Equivalent Domino Pairs](src/numEquivDominoPairs.cpp)                   | Easy       | 48 ms   | 21.2 MB  | 57.72 %   | 100.00 % | 30.07.2019  |
+| 1748  | [Sum of Unique Elements](src/1748_sumOfUnique.cpp)                                 | Easy       | 4 ms    | 7.8 MB   | 50.38 %   | 71.11 %  | 15.03.2021  |
 | 1752  | [Check if Array Is Sorted and Rotated](src/1752_check.cpp)                         | Easy       | 4 ms    | 8.5 MB   | 50.06 %   | 26.97 %  | 15.02.2021  |
 | 1790  | [Check if One String Swap Can Make Strings Equal](src/1790_areAlmostEqual.cpp)     | Easy       | 0 ms    | 6.2 MB   | 100.00 %  | 31.88 %  | 14.03.2021  |
